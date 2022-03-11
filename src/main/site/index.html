@@ -20,7 +20,7 @@
                 <h1>Horoscope Matching</h1>
             </div>
             <label for="sun">Enter your sun:</label>
-            <select name="sun" id="sun">
+            <select name="sun" id="sun" onchange="postAndUpdate()">
                 <option value="Aries">Aries</option>
                 <option value="Taurus">Taurus</option>
                 <option value="Gemini">Gemini</option>
@@ -36,7 +36,7 @@
             </select>
 
             <label for="moon">Enter your moon:</label>
-            <select name="moon" id="moon">
+            <select name="moon" id="moon" onchange="postAndUpdate()">
                 <option value="Aries">Aries</option>
                 <option value="Taurus">Taurus</option>
                 <option value="Gemini">Gemini</option>
@@ -52,7 +52,7 @@
             </select>
 
             <label for="rising">Enter your rising:</label>
-            <select name="rising" id="rising">
+            <select name="rising" id="rising" onchange="postAndUpdate()">
                 <option value="Aries">Aries</option>
                 <option value="Taurus">Taurus</option>
                 <option value="Gemini">Gemini</option>
@@ -69,6 +69,7 @@
 
             <h3 id="loading" hidden>Loading...</h3>
             <ul id="suggestions" aria-live=polite>
+                <div id="stupid error">Howdy</div>
             </ul>
         </div>
     </div>
